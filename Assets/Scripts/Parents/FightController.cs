@@ -209,7 +209,6 @@ public class FightController : MonoBehaviour
 			if (TargetFriend!=null)
 			{
 				spell.SpellUseTarget(TargetFriend);
-				//UseFriend.spell_timeout[spell_num]=UseFriend.spell_cooldown[spell_num];
 				for(int i=0; i<3; ++i)
 					UseFriend.spell_timeout[i]=UseFriend.spell_cooldown[spell_num];
 				//UseFriend.mana-=UseFriend.spell_cost[spell_num];
@@ -218,7 +217,6 @@ public class FightController : MonoBehaviour
 				TargetFriend=null;
 				for(int i=0; i<3; ++i)
 					UseFriend.CreateSpellReload(i,UseFriend.spell_cooldown[spell_num]);
-				//UseFriend.CreateSpellReload(spell_num,UseFriend.spell_cooldown[spell_num]);
 			}
 		}				
 		else
