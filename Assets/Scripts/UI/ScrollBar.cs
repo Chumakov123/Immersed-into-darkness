@@ -13,5 +13,6 @@ public class ScrollBar : MonoBehaviour
 		scrollBar.value+=Input.GetAxis("Mouse ScrollWheel")*koef;
 		//if (scrollBar.value > 1) { scrollBar.value = 1; }
 		//if (scrollBar.value < 0) { scrollBar.value = 0; }
+
 	}
 }
